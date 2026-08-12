@@ -6,7 +6,12 @@
 <title>Chandra Power Solution | Diesel & Industrial Engine Services</title>
 <meta name="description" content="Chandra Power Solution - Diesel engine, industrial engine, DG set repair, maintenance and spare parts services in Durgapur, West Bengal.">
 <style>
-*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;color:#172033;background:#f6f8fb;line-height:1.6}
+/* Dropdown CSS */
+.dropdown { position: relative; display: inline-block; }
+.dropdown-content { display: none; position: absolute; background-color: #071a36; min-width: 160px; box-shadow: 0px 8px 16px rgba(0,0,0,0.2); z-index: 10; text-align: left; border-radius: 4px; }
+.dropdown-content a { color: white; padding: 10px 15px; text-decoration: none; display: block; border-bottom: 1px solid rgba(255,255,255,0.1); }
+.dropdown-content a:hover { background-color: #19a974; }
+.dropdown:hover .dropdown-content { display: block; }  *{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;color:#172033;background:#f6f8fb;line-height:1.6}
 header{background:#071a36;color:white;padding:18px 7%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:5}
 .logo{font-size:22px;font-weight:800}.nav a{color:white;text-decoration:none;margin-left:20px}
 .hero{padding:80px 7%;background:linear-gradient(rgba(0,20,50,0.60),rgba(0,20,50,0.60)),url('Engine.jpg') center/cover no-repeat;color:white}
@@ -27,9 +32,24 @@ footer{background:#041126;color:#cbd5e1;text-align:center;padding:22px}
 <header>
 <div class="logo">CHANDRA POWER SOLUTION</div>
 <nav class="nav">
-<a href="#services">Services</a><a href="#parts">Spare Parts</a><a href="#brands">Brands</a><a href="#about">About</a><a href="#contact">Contact</a>
-</nav>
-</header>
+  <a href="#services">Services</a>
+  <a href="#parts">Spare Parts</a>
+  
+  <!-- Brands Dropdown -->
+  <div class="dropdown">
+    <a href="#brands" style="cursor: pointer;">Brands ▼</a>
+    <div class="dropdown-content">
+      <a href="#brands">VOLVO PENTA</a>
+      <a href="#brands">VOLVO</a>
+      <a href="#brands">CUMMINS</a>
+      <a href="#brands">VOLVO EICHER</a>
+      <a href="#brands">SIMPSON</a>
+      <a href="#brands">DEUTZ</a>
+    </div>
+  </div>
+
+  <a href="#contact">Contact</a>
+</nav>  </header>
 
 <div class="hero">
 <h1>Reliable Power. Professional Engine Service.</h1>
